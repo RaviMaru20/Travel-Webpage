@@ -1,0 +1,316 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 62.5%;
+}
+body {
+    font-family:'Poppins', sans-serif;
+}
+h1 {
+    font-size: 2.6rem;
+}
+h2 {
+    font-size: 4.8rem;
+    
+}
+h3 {
+    font-size: 2.8rem;
+    font-weight: normal;
+}
+h4 {
+    font-size: 2.4rem;
+}
+p {
+    font-size: 2rem;
+}
+a {
+    color: white;
+    text-decoration: none;
+}
+li, button, label, input {
+    font-size: 2rem;
+}
+button {
+    padding: 2rem 6rem;
+    cursor: pointer;
+    border: none;
+    background: #126acd;
+    color: white;
+    transition: background 0.1s ease-in-out;
+}
+button:hover {
+    
+    border-radius: 2rem;
+    background: -moz-linear-gradient(90deg, rgba(255,169,6,1) 35%, rgba(0,212,255,1) 100%);
+    background: -webkit-linear-gradient(90deg, rgba(255,169,6,1) 35%, rgba(0,212,255,1) 100%);
+    background: linear-gradient(90deg, rgba(255,169,6,1) 35%, rgba(0,212,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffa906",endColorstr="#00d4ff",GradientType=1);
+}
+/* nav section with Hero */
+
+.main-head {
+    background-color: #19232f;
+    position: sticky;
+    top: 0px;
+    z-index: 3;
+}
+nav {
+    color: white;
+    min-height: 10vh;
+    padding: 2rem;
+    display: flex;
+    width: 90%;
+    margin: auto;
+    align-items: center;
+    flex-wrap: wrap;
+}
+nav ul {
+    display: flex;
+    flex: 1 1 40rem;
+    justify-content: space-around;
+    list-style: none;
+    
+    align-items: center;
+}
+
+#logo {
+    flex: 1 1 40rem;
+    color: #f2b74a;
+    cursor: pointer;
+}
+span {
+    color: white;
+}
+
+.hero {
+    background: linear-gradient(rgba(0,0,0,0.75),transparent), url("./img/gujarat.jpg");
+    min-height: 90vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    text-shadow: 1rem 1rem 1rem black;
+}
+.hero h3 {
+    padding: 4rem;
+}
+
+/* Locations Section */
+#locations {
+    min-height: 100vh;
+    background:url("./img/unity.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+.locations-head {
+    
+    width: 90%;
+    margin: auto;
+}
+.locations-head h2 {
+
+    padding: 2rem 0rem;
+    background: rgb(255,255,255);
+    background: -moz-linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,169,6,1) 12%, rgba(0,212,255,1) 27%);
+    background: -webkit-linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,169,6,1) 12%, rgba(0,212,255,1) 27%);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 0%, rgba(255,169,6,1) 12%, rgba(0,212,255,1) 27%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#00d4ff",GradientType=1);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.locations-head h3 {
+    padding: 3rem 0rem;
+    color: white;
+}
+.cloud {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+    opacity: 0.15;
+}
+
+/* benefits Cards section */
+.benefits-head {
+    background: none;
+    min-height: 30vh;
+    color: white;
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+.cards img {
+    height: 70px;
+
+}
+.card {
+    flex: 1 1 25rem;
+    min-height: 40vh;
+    margin: 2rem 5rem;
+    border-radius: 1rem;
+    box-shadow: 0px 10px 20px rgba(100, 100, 100, 0.5),0px 10px 20px rgba(78, 78, 78, 0.5);
+    text-align: center;
+    justify-content: center;
+    cursor: pointer;
+    background: white;
+}
+#benefits {
+    background: linear-gradient(rgba(0,0,0,0.75),transparent),url("./img/rajwadi.jpeg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+.cards {
+    width: 100%;
+    margin: auto;
+    display: flex;
+    min-height: 70vh;
+    align-items: center;
+    flex-wrap: wrap;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.card h4{
+    padding: 2.8rem 0rem;
+}
+.card p{
+    padding: 0rem 2rem;
+}
+.icon-img {
+    background: #19232f;
+    padding: 1rem;
+    border-radius: 1rem;
+}
+
+/* contact section */
+
+#contact{
+    min-height: 100vh;
+    background: linear-gradient(rgba(0,0,0,0.75),transparent),url("./img/rankivav.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.form-wrapper{
+    background: rgba(255, 255, 255, 0.55);
+    width: 40%;
+    color: black;
+    border-radius: 4rem;
+}
+.form-head {
+    text-align: center;
+    padding: 3rem;
+    
+}
+.form-head h2{
+    font-size: 2.6rem;
+}
+.email-form, .name-form, .message-form {
+    padding: 2rem;
+    text-align: center;
+}
+
+.name-form label {
+    margin: 0rem 3.8rem;
+}
+.email-form label {
+    margin: 0rem 2rem;
+}
+.message-form label {
+    margin: 0rem 2.5rem;
+}
+
+
+.message-form textarea {
+    width: 21rem;
+    height: 10rem;
+    resize: none;
+}
+
+.form-wrapper button {
+    width: 100%;
+    border-bottom-left-radius: 4rem;
+    border-bottom-right-radius: 4rem;
+
+}
+
+/* footer section */
+
+footer {
+    background: #19232f;
+    color: white;
+}
+.footer-wrapper {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    min-height: 10vh;
+    align-items: center;
+    flex-wrap: wrap;
+}
+footer h5 {
+    flex: 1 1 40rem;
+    font-size: 2.5rem;
+}
+footer ul {
+    display: flex;
+    list-style: none;
+    flex: 1 1 40rem;
+    align-items: center;
+    justify-content: space-between;
+}
+
+/* Media Queries */
+@media screen and (max-width: 950px ) {
+    html{
+        font-size: 50%;
+    }
+    nav {
+        text-align: center;
+    }
+    #logo {
+        padding: 1rem 0rem;
+    }
+    #locations {
+        min-height: 100vh;
+        background:url("./img/unity-mobile.jpeg");
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        display: flex;
+        align-items: center;
+        position: relative;
+        text-decoration-color: white;
+    }
+    .locations h2 {
+        text-decoration: underline;
+    }
+    .form-wrapper{
+        
+        width: 80%;
+    }
+
+    .footer-wrapper h5 {
+        text-align: center;
+        padding: 2rem;
+    }
+    
+}
